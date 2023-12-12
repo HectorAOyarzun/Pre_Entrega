@@ -1,0 +1,82 @@
+/*
+List Variables
+*/
+/*
+Primero van las variables
+*/
+.container__grid {
+  display: grid;
+  grid-template-areas: "links links links" "content content content " "foot foot foot";
+}
+
+.nav {
+  grid-area: links;
+}
+
+.content {
+  grid-area: content;
+}
+
+.container__footer {
+  grid-area: foot;
+}
+
+/*
+Layout 
+*/
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+  min-width: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+
+main {
+  width: auto;
+  min-width: 100%;
+  margin: 0;
+}
+
+.animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 300px;
+}
+.animation__word {
+  animation: changeColor 4s infinite;
+  font-size: 30px;
+  text-shadow: 1px 1px white;
+}
+
+@keyframes changeColor {
+  0% {
+    color: red;
+  }
+  25% {
+    color: rgb(241, 241, 249);
+  }
+  50% {
+    color: rgb(209, 63, 14);
+  }
+  75% {
+    color: orange;
+  }
+  100% {
+    color: rgb(11, 146, 188);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

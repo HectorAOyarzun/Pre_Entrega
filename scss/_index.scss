@@ -1,0 +1,46 @@
+*{
+    @include reset;
+}
+html{
+    @include html;
+}
+body{
+    @include body;
+    background-color:black;
+}
+main{
+    @include main;
+    
+}
+
+   .animation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 300px;
+   
+    &__word{
+          animation: changeColor 4s infinite;
+          font-size: 30px;
+          text-shadow: 1px 1px white;
+    }
+}
+
+@keyframes changeColor {
+  0% {
+    color: red;
+  }
+  25% {
+    color: rgb(241, 241, 249);
+  }
+  50% {
+    color: rgb(209, 63, 14);
+  }
+  75% {
+    color: orange;
+  }
+  100% {
+    color: rgb(11, 146, 188);
+  }
+}
